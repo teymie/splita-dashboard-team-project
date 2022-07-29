@@ -80,7 +80,7 @@ body{
 
 .search_btn {
     display: flex;
-    margin: 10px 0 10px 8rem;
+    margin: 10px 0 10px 10rem;
     align-items: center;
     width: 40%;
     background-color: #fff;
@@ -169,13 +169,15 @@ body{
 .main_content{
     width: 88%;
     max-width: 1350px;
-    margin: 4rem 5.5rem ;
+    margin: 4rem 0rem 4rem 6.5rem ;
 }
 
 .white_aside_wrap{
     display: flex;
     
 }
+
+
 
 .white_rectangle{
     background-color: #fff;
@@ -260,7 +262,7 @@ aside{
 
 .aside_input{
     padding: 12px 15px;
-    width: 90%;
+    width: 95%;
     border-radius: 8px;
     font-size: 20px;
     border: 1px solid #555555;
@@ -327,7 +329,10 @@ aside{
         padding: 0;
       }
 
-      .social_media_link, .social_media_list{
+    .main_content{
+        margin: 4rem 0rem 4rem 4.5rem ;
+    }
+    .social_media_link, .social_media_list{
         font-size: 14px;
         margin-left: 7px;
         
@@ -372,10 +377,10 @@ aside{
         margin-top: 1rem;
         margin-bottom: 4rem;
     }
-
     aside{
-        padding-top: 7rem;
+        padding: 7rem 0 2rem 2rem;
     }
+
 }
 
 @media(max-width: 768px){
