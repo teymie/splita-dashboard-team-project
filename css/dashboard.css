@@ -21,7 +21,7 @@ body{
     top: 0;
     background-color: white;
     width: 14rem;
-    height: 124vh;
+    height: 130vh;
     margin-left: 0;
 }
 .brand{
@@ -61,7 +61,7 @@ color: WHITE;
     margin-top: 1.2rem;
 }
 .log_out{
-    margin-top: 18rem;
+    margin-top: 12rem;
 }
 
 /*  SIDE NAVBAR ENDED*/
