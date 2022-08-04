@@ -1,122 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dashboard</title>
-        <link rel="stylesheet" href="./css/dashboard.css">
-
-    </head>
-    <body>
-        <!-- container wrapping all content starts -->
-        <div class="big_container">
-            <!-- side navbar started -->
-            <div class="side_navbar">
-                <!-- brand section started -->
-                <div class="brand">
-                    <!-- This (The logo)leads back to home page -->
-                    <a href="#"><img src="./img/logo1.png" class="brand_img" alt="Splita's Logo"></a>
-                </div>
-                <!-- ended -->
-                <!-- left navbar sec started -->
-                <nav class="left_navbar">
-                    <ul>
-                        <li class="left_list">
-                            <a class= "left_link"href="#">
-                                <img src="./img/dashboard_icon.png" class="left_navbar_icon for_active" alt="dashboard_icon">
-                                <img src="./img/dashboard.png" class="for_active1" alt="dashboard_icon">Dashboard
-                            </a>
-                        </li>
-                        <li class="left_list"><a class= "left_link"href="#">
-                            <img src="./img/Group.png" class="left_navbar_icon" alt="files_icon">My Files</a></li>
-                        <li class="left_list"><a class= "left_link"href="#">
-                            <img src="./img/Group1.png" class="left_navbar_icon" alt="storage icon">Storage</a></li>
-                        <li class="left_list"><a class= "left_link"href="#">
-                            <img src="./img/Group2.png" class="left_navbar_icon" alt="Recycle bin icon">Recycle Bin</a></li>
-                        <li class="left_list"><a class= "left_link"href="#">
-                            <img src="./img/Group3.png" class="left_navbar_icon" alt="Settings icon">Settings</a></li>
-
-                                <!-- ended -->
-                        <!-- logout sec started -->
-                        <li class="left_list log_out"><a class= "left_link"href="#">
-                            <img src="./img/Group6.png" class="left_navbar_icon" alt="Logout icon">Logout</a></li>
-                    </ul>
-                </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <script defer src="./main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="top">
+        <div class="con">
+            <input type="text" placeholder="Search" />
+            <!-- <img src="{% static 'images/Vector.svg' %}" /> -->
+            <img src="./img/searchline.png" alt="Search Line">
+        </div>
+                    
+        <div class="user">
+            <img src="./img/Ellipse3.png" id= "user_pic"alt="A user's Pic">
+            <div class="user_info">
+                <p class="user_text">Mary Jane</p>
+                <p class="user_text">Maryjane@gmail.com</p>
             </div>
-            <!-- Left side ended -->
-            <!-- Main side started -->
-            <div class="main">
-                <!-- top sec started -->
-                <div class="top">
-                    <button class="search_btn">
-                        <img src="./img/searchline.png" alt="Search Line">
-                        <p class="search_text">Search</p>
-                    </button>              
-                    <div class="user">
-                        <img src="./img/Ellipse3.png" class= "user_pic"alt="A user's Pic">
-                        <div class="user_info">
-                            <p class="user_text">Mary Jane</p>
-                            <p class="user_text">Maryjane@gmail.com</p>
-                        </div>
-                        
-                        <div class="dropdown">
-                            <button class="dropbtn"> 
-                                <img src="./img/user_arrow.png" class= "user_arrow"alt="Arrow Down image">
-                            </button>
-                            <div class="dropdown-content">
-                              <a href="#">Logout</a>
-                            </div>
-                          </div> 
-                    </div>
+            
+            <div class="dropdown">
+                
+                    <img src="./img/user_arrow.png" id= "user_arrow"alt="Arrow Down image">
+                
+                <div class="dropdown-content">
+                  <a href="#">Logout</a>
                 </div>
-                <!-- top ended -->
-                <!-- main content started -->
-                <div class="main_content container">
-                    <!-- alone text started -->
-                    <h3 class="alone_text">Upload files</h3>
-                    <!-- alone text ended -->
-                    <div class="white_aside_wrap">
-                        <div class="white_rectangle">
-        
-                            <div class="break_line_rectangle">
-                                <img src="./img/file_3_line.png" alt="An image that represents file">
-                                <p class="main_p">Drag and drop files, or <a href="#" class= "blue_p">Browse</a></p>
-                                <h4 class="grey_capital">JSON, CSV</h4>
-                            </div>
-                        
-                            <!-- break line rectangle sec ended -->
-                            <h4 class="capital_text">OR IMPORT FROM</h4>
-                            <ul class="social_media_wrap">
-                                <li class="social_media_list google"><a href="#" class="social_media_link google">
-                                    <img src="./img/logos_google-drive.png" class= "google_img" alt="google drive logo">GOOGLE DRIVE</a></li>
-                                <li class="social_media_list"><a href="#" class="social_media_link">
-                                    <img src="./img/fontisto_dropbox.png" class="social_img" alt="Dropbox logo">DROPBOX</a></li>
-                                <li class="social_media_list"><a href="#" class="social_media_link">
-                                    <img src="./img/logos_microsoft-onedrive.png" class="social_img" alt="one drive logo">ONE DRIVE</a></li>
-                                <li class="social_media_list"><a href="#" class="social_media_link">
-                                    <img src="./img/bi_link-45deg.png" class="social_img" alt="google drive logo">LINK</a></li>
-                            </ul>
-                        </div>
-                        <!--white rectangle ended  -->
+              </div> 
+        </div>
+        </div>
+        <div class="side_navbar">
+            <!-- brand section started -->
+            <div class="brand">
+                <!-- This (The logo)leads back to home page -->
+                <img src="./img/logo1.png" class="brand_img" alt="Splita's Logo">
+            </div>
+            <!-- ended -->
+            <!-- left navbar sec started -->
+            <!-- <div class="left_navbar"> -->
+                <ul>
+                    <li class="left_list">
+                        <a class= "left_link"href="#">
+                            <img src="./img/dashboard_icon.png" class="left_navbar_icon for_active" alt="dashboard_icon">
+                           <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li class="left_list"><a class= "left_link"href="#">
+                        <img src="./img/Group.png" class="left_navbar_icon" alt="files_icon"><p>My Files</p></a></li>
+                    <li class="left_list"><a class= "left_link"href="#">
+                        <img src="./img/Group1.png" class="left_navbar_icon" alt="storage icon"><p>Storage</p></a></li>
+                    <li class="left_list"><a class= "left_link"href="#">
+                        <img src="./img/Group2.png" class="left_navbar_icon" alt="Recycle bin icon"><p>Recycle Bin</p></a></li>
+                    <li class="left_list"><a class= "left_link"href="#">
+                        <img src="./img/Group3.png" class="left_navbar_icon" alt="Settings icon"><p>Settings</p></a></li>
 
-                        <!-- Aside sec started -->
-                        <aside>
-                            <form action="#" class="aside_content">
-                                <label class="aside_text">Set chunk size</label>
-                                <input type="text" id="text" class="aside_input" placeholder="Input number (mb)">
-                            </form>
-                            <form action="#" class="aside_content">
-                                <label class="aside_text">Line count per package (rows)</label>
-                                <input type="number" id="text" class="aside_input" placeholder=0>
-                            </form>
-                        </aside>
-                    </div>
-                    <!-- White and Aside wrap ended -->
-                    <button class="chunk_btn">CHUNK</button>
-                </div>
+                            <!-- ended -->
+                    <!-- logout sec started -->
+                    <li class="left_list log_out"><a class= "left_link"href="#">
+                        <img src="./img/Group6.png" class="left_navbar_icon" alt="Logout icon"><p>Logout</p></a></li>
+                </ul>
             </div>
         </div>
+        <div class="main_content container">
+            <!-- alone text started -->
+            <h3 class="alone_text">Upload files</h3>
+            <!-- alone text ended -->
+            <div class="white_aside_wrap">
+                <div class="white_rectangle">
 
-    </body>
+                    <div class="break_line_rectangle " >
+                        <form action="upload/" method="POST" id="drop_zone"  ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+                            <img src="./img/file_3_line.png" alt="An image that represents file">
+                            <p class="main_p">Drag and drop files, or <a href="#" id= "blue_p" onclick="document.getElementById('selectedFile').click();">Browse</a></p>
+                            <input type="file" id="selectedFile"  onchange="javascript:addFile()" style="display: none;" />
+                        <h4 class="grey_capital">JSON, CSV</h4>
+                    </form>
+                    </div>
+                
+                    <!-- break line rectangle sec ended -->
+                    <h4 class="capital_text">OR IMPORT FROM</h4>
+                    <ul class="social_media_wrap">
+                        <li class="social_media_list google"><a href="#" class="social_media_link google">
+                            <img src="./img/logos_google-drive.png" class= "google_img" alt="google drive logo">GOOGLE DRIVE</a></li>
+                        <li class="social_media_list"><a href="#" class="social_media_link">
+                            <img src="./img/fontisto_dropbox.png" class="social_img" alt="Dropbox logo">DROPBOX</a></li>
+                        <li class="social_media_list"><a href="#" class="social_media_link">
+                            <img src="./img/logos_microsoft-onedrive.png" class="social_img" alt="one drive logo">ONE DRIVE</a></li>
+                        <li class="social_media_list"><a href="#" class="social_media_link">
+                            <img src="./img/bi_link-45deg.png" class="social_img" alt="google drive logo">LINK</a></li>
+                    </ul>
+                </div>
+                <!--white rectangle ended  -->
+
+                <!-- Aside sec started -->
+                <aside>
+                    <form action="#" class="aside_content">
+                        <label class="aside_text">Set chunk size</label><br>
+                        <input type="text" id="text" class="aside_input" placeholder="Input number (mb)">
+                    </form>
+                    <form action="#" class="aside_content">
+                        <label class="aside_text">Line count per package (rows)</label><br>
+                        <input type="number" id="text" class="aside_input" placeholder=0>
+                    </form>
+                </aside>
+            </div>
+            <!-- White and Aside wrap ended -->
+            <button class="chunk_btn">CHUNK</button>
+        </div>
+    </div>
+</body>
 </html>
